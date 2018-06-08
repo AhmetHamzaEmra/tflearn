@@ -42,7 +42,7 @@ block5_conv1 = conv_2d(block4_pool, 512, 3, activation='relu', name='block5_conv
 block5_conv2 = conv_2d(block5_conv1, 512, 3, activation='relu', name='block5_conv2')
 block5_conv3 = conv_2d(block5_conv2, 512, 3, activation='relu', name='block5_conv3')
 block5_conv4 = conv_2d(block5_conv3, 512, 3, activation='relu', name='block5_conv4')
-block4_pool = max_pool_2d(block5_conv4, 2, strides=2, name = 'block4_pool')
+block5_pool = max_pool_2d(block5_conv4, 2, strides=2, name = 'block5_pool')
 flatten_layer = tflearn.layers.core.flatten (block4_pool, name='Flatten')
 
 
